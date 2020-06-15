@@ -105,10 +105,6 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ![Screenshot of docker ps output](Images/ELK-Docker-PS-Output.png)
 
-sysadmin@ELK-VM2-EAST2:~$ sudo docker ps
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                                                              NAMES   
-3bb75c85b831        sebp/elk            "/usr/local/bin/star…"   12 days ago         Up 35 seconds       0.0.0.0:5044->5044/tcp, 0.0.0.0:5601->5601/tcp, 0.0.0.0:9200->9200/tcp, 9300/tcp   elkstack
-
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - 10.0.0.5
