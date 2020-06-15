@@ -39,9 +39,9 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name                 | Function              | Public IP Address                        | Private IP Address | Operating System         |
 |----------------------|-----------------------|------------------------------------------|--------------------|--------------------------|
 | Jump-Box-Provisioner | Gateway/Jumpbox       | 104.211.29.228                           | 10.0.0.4           | Linux (Ubuntu 18.04)     |
-| DVMA-VM1             | Application Webserver | N/A (52.186.27.128 loadbalanced)         | 10.0.0.5           | Linux (Ubuntu 18.04)     |
-| DVMA-VM2             | Application Webserver | N/A (52.186.27.128 loadbalanced)         | 10.0.0.7           | Linux (Ubuntu 18.04)     |
-| DVMA-VM3             | Application Webserver | N/A (52.186.27.128 loadbalanced)         | 10.0.0.10          | Linux (Ubuntu 18.04)     |
+| DVMA-VM1             | App Webserver         | N/A (52.186.27.128 loadbalanced)         | 10.0.0.5           | Linux (Ubuntu 18.04)     |
+| DVMA-VM2             | App Webserver         | N/A (52.186.27.128 loadbalanced)         | 10.0.0.7           | Linux (Ubuntu 18.04)     |
+| DVMA-VM3             | App Webserver         | N/A (52.186.27.128 loadbalanced)         | 10.0.0.10          | Linux (Ubuntu 18.04)     |
 | ELK-VM2-EAST2        | Security Monitoring   | 52.177.151.29                            | 10.1.0.7           | Linux (Ubuntu 18.04)     |
 | DVWA_LoadBalancer_1  | Loadbalancer          | 52.186.27.128                            | N/A                | N/A (Azure Loadbalancer) |
 
