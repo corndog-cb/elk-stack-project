@@ -1,0 +1,36 @@
+---
+
+ - name: Configure web VM with Docker and ELK Stack
+   hosts: elkservers
+   become: true
+   tasks:
+
+   - name: Install Docker.io
+     apt:
+       force_apt_get: yes
+       name: docker.io
+       state: present
+
+   - name: Install pip
+     apt:
+       force_apt_get: yes
+       name: python-pip
+       state: present
+
+   - name: Install Docker python module
+     pip:
+       name: docker
+       state: present
+
+   - name: Increase virtual memory
+     command: sysctl -w vm.max_map_count=262144
+
+   - name: Download and launch a docker ELK container
+     docker_container:
+       name: elkstack
+       image: sebp/elk
+       state: started
+       published_ports:
+        - "5601:5601"
+        - "9200:9200"
+        - "5044:5044"
