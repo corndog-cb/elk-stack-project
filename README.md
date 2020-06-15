@@ -74,7 +74,6 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - The main advantage of automating configuration with Ansible is that I can easily add and remove machines to my environment as well as quickly make changes to all the machines in my environment at the same time. For example if it turns out that having three loadbalanced DVWA machines is not enough to handle all the traffic they receive then I can add a new machine to the backend pool and quickly configure it via Ansible.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - install-elk.yml
    - Install Docker.io via apt
    - Install PIP via apt
